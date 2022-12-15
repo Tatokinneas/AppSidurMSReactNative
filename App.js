@@ -1,30 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
-
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
+import Home from "./Pages/Home";
 export default function App() {
-  let logo =require("./assets/LogoMS.png");
-
   return (
-    <View style={styles.container}>
-      <Image source={logo} style={styles.image}></Image>
-      <Pressable><Text>Hola</Text></Pressable>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <View style={styles.container}>
+        <Home />
+        <StatusBar style="auto" />
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex:1,
+    backgroundColor: "#BB0D32",
+    alignItems: "center",
+    
   },
-  image:{
-    width: 300,
-    height: 300,
-    resizeMode:'contain',
-  }
-  
 });
