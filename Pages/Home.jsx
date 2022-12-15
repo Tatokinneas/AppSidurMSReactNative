@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: "center",
-    fontSize: 20,
+    fontSize: 32,
     color: "#1A0D6B",
     fontFamily: "Arial-BoldMT",
   },
@@ -117,13 +117,13 @@ const styles = StyleSheet.create({
   },
   donadores: {
     textAlign: "center",
-    fontSize: 20,
+    fontSize: 28,
     color: "#1A0D6B",
     fontFamily: "Noto",
   },
   nota: {
     paddingVertical: 2,
-    fontSize: 10,
+    fontSize: 20,
     color: "white",
   },
 });

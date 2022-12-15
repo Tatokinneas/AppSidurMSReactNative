@@ -79,6 +79,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
   },
+  textoDeLosBotones:{
+    color: "white",
+    fontFamily: "Noto",
+    fontSize: 15,
+  }
 });
 
 export default Shajrit;
