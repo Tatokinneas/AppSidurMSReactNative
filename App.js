@@ -2,6 +2,7 @@ import Home from "./Pages/Home";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Shajrit from "./Pages/Shajrit";
+import PDF  from "./Pages/PDF"
 
 const Stack = createNativeStackNavigator();
 
@@ -33,9 +34,13 @@ export default function App() {
             headerBackTitleVisible: false,
           }}
          />
+         <Stack.Screen name = "PDF" component={PDF} ></Stack.Screen>
+      
+
         </Stack.Navigator>
       </NavigationContainer>
     </>
   );
+
 }
 
