@@ -13,21 +13,21 @@ const Home = () => {
     <>
       <View style={styles.container}>
         <Image source={logo} style={styles.image}></Image>
+        <Text style={styles.title}>Sidur Monte Sinai</Text>
         <ScrollView>
-          <Text style={styles.title}>Sidur Monte Sinai</Text>
-          <Pressable
+            <Pressable
             style={styles.button}
             onPress={() => navigation.navigate("Shajrit")}
-          >
-            <Text style={styles.textoDeLosBotones}>Shajrit</Text>
-          </Pressable>
-          <Pressable
+            >
+                <Text style={styles.textoDeLosBotones}>Shajrit</Text>
+            </Pressable>
+            <Pressable
             style={styles.button}
             onPress={() => navigation.navigate("Minja")}
-          >
-            <Text style={styles.textoDeLosBotones}>Minja</Text>
-          </Pressable>
-          <Pressable
+            >
+                <Text style={styles.textoDeLosBotones}>Minja</Text>
+            </Pressable>
+            <Pressable
             style={styles.button}
             onPress={() => navigation.navigate("Arbit")}
           >
