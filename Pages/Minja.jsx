@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Minja = () => {
   return (
-    <><Text>
-        Minja
-        </Text>
-        </>
-  )
-}
+    <>
+      <Text>Minja</Text>
+    </>
+  );
+};
 
-export default Minja
+export default Minja;

@@ -1,0 +1,1 @@
+import shabatonimDiferentes1 from "../assets/Photos/SIDUR-500.png";
