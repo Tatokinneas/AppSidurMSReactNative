@@ -47,10 +47,10 @@ const styles = StyleSheet.create({
   borderRadius: 5,   
   },
   titulo: {
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 32,
     color: "#1A0D6B",
-    fontFamily: 'Noto',
+    fontFamily: "Arial-BoldMT",
 
   },
   textoDeLosBotones: {

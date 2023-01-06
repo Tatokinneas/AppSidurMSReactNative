@@ -64,11 +64,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#BB0D32",
     alignItems: "center",
   },
-  title: {
-    textAlign: "center",
-    fontSize: 20,
-    color: "#1A0D6B",
-    fontFamily: "Noto",
+    title: {
+      textAlign: "center",
+      fontSize: 32,
+      color: "#1A0D6B",
+      fontFamily: "Arial-BoldMT",
   },
   button: {
     backgroundColor: "#860008",

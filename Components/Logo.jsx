@@ -12,10 +12,14 @@ const Logo = () => {
 
 const styles = StyleSheet.create({
   image: {
-    width: 200,
-    height: 190,
+    width: 110,
+    height: 100,
     resizeMode: "contain",
-    marginLeft: 85,
+    alignItems: "center",
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "center",
+    //marginLeft: 130,
   },
 })
 export default Logo;
