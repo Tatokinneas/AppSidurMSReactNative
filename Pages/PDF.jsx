@@ -14,6 +14,7 @@ import kadeshLiObject from "../Api/apiKadeshLi";
 import ashreObject from "../Api/apiAshre";
 import ishtabajObject from "../Api/apiIshtabaj";
 import debarimObject from "../Api/apiDebarim";
+
 const PDF = ({ navigation, route }) => {
   const { ruta } = route.params;
   console.log(ruta);
