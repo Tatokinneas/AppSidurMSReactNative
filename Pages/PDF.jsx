@@ -14,16 +14,16 @@ import kadeshLiObject from "../Api/apiKadeshLi";
 import ashreObject from "../Api/apiAshre";
 import ishtabajObject from "../Api/apiIshtabaj";
 import debarimObject from "../Api/apiDebarim";
-
+import birkatHailanotObject from "../Api/apiBirkatHailanot";
 const PDF = ({ navigation, route }) => {
   const { ruta } = route.params;
   console.log(ruta);
-
-
-
-  
-
-  
+  let dataPDF = null;
+  if (ruta === "birkatHashajar") {
+    dataPDF = birkatHashajarObject;
+  } else if (ruta === "kadeshLi") {
+    dataPDF = kadeshLiObject;
+  }
 
   function Slide({ data }) {
     return (
@@ -36,7 +36,7 @@ const PDF = ({ navigation, route }) => {
       </View>
     );
   }
-  function Carousel({object}) {
+  function Carousel({ object }) {
     return (
       <FlatList
         data={object}
@@ -44,10 +44,8 @@ const PDF = ({ navigation, route }) => {
         renderItem={({ item }) => {
           return <Slide data={item} />;
         }}
-        
         horizontal={true}
         inverted={true}
-        
       />
     );
   }
@@ -64,7 +62,7 @@ const PDF = ({ navigation, route }) => {
         </View>
       </View>
       <View style={styles.slidercontain}>
-        <Carousel object={birkatHashajarObject}/>
+        <Carousel object={dataPDF} />
       </View>
     </>
   );

@@ -10,7 +10,7 @@ const Shajrit = ({ navigation }) => {
         <ScrollView>
           <Pressable
             style={styles.button}
-            onPress={
+            onPress={()=>
               navigation.navigate("PDF", { ruta: "birkatHashajar" })
             }
           >
@@ -18,19 +18,19 @@ const Shajrit = ({ navigation }) => {
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={navigation.navigate("PDF", { ruta: "kadeshLi" })}
+            onPress={()=>navigation.navigate("PDF", { ruta: "kadeshLi" })}
           >
             <Text style={styles.textoDeLosBotones}>Kadesh Li</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={navigation.navigate("PDF", { ruta: "Ashre" })}
+            onPress={()=>navigation.navigate("PDF", { ruta: "Ashre" })}
           >
             <Text style={styles.textoDeLosBotones}>Ashre</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={navigation.navigate("PDF", { ruta: "Ishtabaj" })}
+            onPress={()=>navigation.navigate("PDF", { ruta: "Ishtabaj" })}
           >
             <Text style={styles.textoDeLosBotones}>Ishtabaj</Text>
           </Pressable>

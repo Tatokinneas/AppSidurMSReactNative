@@ -1,31 +1,64 @@
+let arbit1 = require("../assets/Photos/SIDUR-176.png");
+let arbit2 = require("../assets/Photos/SIDUR-177.png");
+let arbit3 = require("../assets/Photos/SIDUR-178.png");
+let arbit4 = require("../assets/Photos/SIDUR-179.png");
+let arbit5 = require("../assets/Photos/SIDUR-180.png");
+let arbit6 = require("../assets/Photos/SIDUR-181.png");
+let arbit7 = require("../assets/Photos/SIDUR-182.png");
+let arbit8 = require("../assets/Photos/SIDUR-183.png");
+let arbit9 = require("../assets/Photos/SIDUR-184.png");
+let arbit10 = require("../assets/Photos/SIDUR-185.png");
+let arbit11 = require("../assets/Photos/SIDUR-186.png");
+let arbit12 = require("../assets/Photos/SIDUR-187.png");
+let arbit13 = require("../assets/Photos/SIDUR-188.png");
+let arbit14 = require("../assets/Photos/SIDUR-189.png");
+let arbit15 = require("../assets/Photos/SIDUR-190.png");
+let arbit16 = require("../assets/Photos/SIDUR-191.png");
+let arbit17 = require("../assets/Photos/SIDUR-192.png");
+let arbit18 = require("../assets/Photos/SIDUR-193.png");
+let arbit19 = require("../assets/Photos/SIDUR-194.png");
+let arbit20 = require("../assets/Photos/SIDUR-195.png");
+let arbit21 = require("../assets/Photos/SIDUR-196.png");
+let arbit22 = require("../assets/Photos/SIDUR-197.png");
+let arbit23 = require("../assets/Photos/SIDUR-198.png");
+let arbit24 = require("../assets/Photos/SIDUR-199.png");
+let arbit25 = require("../assets/Photos/SIDUR-200.png");
+let arbit26 = require("../assets/Photos/SIDUR-201.png");
+let arbit27 = require("../assets/Photos/SIDUR-202.png");
+let arbit28 = require("../assets/Photos/SIDUR-203.png");
+let arbit29 = require("../assets/Photos/SIDUR-204.png");
+let arbit30 = require("../assets/Photos/SIDUR-205.png");
 
-import arbit1 from "../assets/Photos/SIDUR-176.png";
-import arbit2 from "../assets/Photos/SIDUR-177.png";
-import arbit3 from "../assets/Photos/SIDUR-178.png";
-import arbit4 from "../assets/Photos/SIDUR-179.png";
-import arbit5 from "../assets/Photos/SIDUR-180.png";
-import arbit6 from "../assets/Photos/SIDUR-181.png";
-import arbit7 from "../assets/Photos/SIDUR-182.png";
-import arbit8 from "../assets/Photos/SIDUR-183.png";
-import arbit9 from "../assets/Photos/SIDUR-184.png";
-import arbit10 from "../assets/Photos/SIDUR-185.png";
-import arbit11 from "../assets/Photos/SIDUR-186.png";
-import arbit12 from "../assets/Photos/SIDUR-187.png";
-import arbit13 from "../assets/Photos/SIDUR-188.png";
-import arbit14 from "../assets/Photos/SIDUR-189.png";
-import arbit15 from "../assets/Photos/SIDUR-190.png";
-import arbit16 from "../assets/Photos/SIDUR-191.png";
-import arbit17 from "../assets/Photos/SIDUR-192.png";
-import arbit18 from "../assets/Photos/SIDUR-193.png";
-import arbit19 from "../assets/Photos/SIDUR-194.png";
-import arbit20 from "../assets/Photos/SIDUR-195.png";
-import arbit21 from "../assets/Photos/SIDUR-196.png";
-import arbit22 from "../assets/Photos/SIDUR-197.png";
-import arbit23 from "../assets/Photos/SIDUR-198.png";
-import arbit24 from "../assets/Photos/SIDUR-199.png";
-import arbit25 from "../assets/Photos/SIDUR-200.png";
-import arbit26 from "../assets/Photos/SIDUR-201.png";
-import arbit27 from "../assets/Photos/SIDUR-202.png";
-import arbit28 from "../assets/Photos/SIDUR-203.png";
-import arbit29 from "../assets/Photos/SIDUR-204.png";
-import arbit30 from "../assets/Photos/SIDUR-205.png";
+const arbitObject = [
+  { id: 1, image: arbit1 },
+  { id: 2, image: arbit2 },
+  { id: 3, image: arbit3 },
+  { id: 4, image: arbit4 },
+  { id: 5, image: arbit5 },
+  { id: 6, image: arbit6 },
+  { id: 7, image: arbit7 },
+  { id: 8, image: arbit8 },
+  { id: 9, image: arbit9 },
+  { id: 10, image: arbit10 },
+  { id: 11, image: arbit11 },
+  { id: 12, image: arbit12 },
+  { id: 13, image: arbit13 },
+  { id: 14, image: arbit14 },
+  { id: 15, image: arbit15 },
+  { id: 16, image: arbit16 },
+  { id: 17, image: arbit17 },
+  { id: 18, image: arbit18 },
+  { id: 19, image: arbit19 },
+  { id: 20, image: arbit20 },
+  { id: 21, image: arbit21 },
+  { id: 22, image: arbit22 },
+  { id: 23, image: arbit23 },
+  { id: 24, image: arbit24 },
+  { id: 25, image: arbit25 },
+  { id: 26, image: arbit26 },
+  { id: 27, image: arbit27 },
+  { id: 28, image: arbit28 },
+  { id: 29, image: arbit29 },
+  { id: 30, image: arbit30 },
+];
+export default arbitObject;
