@@ -48,14 +48,33 @@ import musafRoshJodeshShabatObjetct from "../Api/apiMusafRoshJodeshShabat";
 import mizmorimObject from "../Api/apiMizmorim";
 import amidaYomTobObject from "../Api/apiAmidaYomtob";
 import amidaMusafObject from "../Api/apiAmidaMusaf";
-//Perashot import
+//Perashot imports
 import bereshitObject from "../Api/apiBereshit";
 import shemotObject from "../Api/apiShemot";
 import vaikraObject from "../Api/apiVaikra";
 import bamidbarObject from "../Api/apiBamidar";
 import debarimObject from "../Api/apiDebarim";
-
+//Otros imports
+import birkatHalebanaObject from "../Api/apiBirkatHalebana";
+import sefiratHaomerObject from "../Api/apiSefiratHaomer";
+import velasObject from "../Api/apiVelas";
+import seferJanucaObject from "../Api/apiSeferJanuca";
+import purimObject from "../Api/apiPurim";
 import birkatHailanotObject from "../Api/apiBirkatHailanot";
+import limudNisanObject from "../Api/apiLimudNisan";
+import shoaObject from "../Api/apiShoa";
+import yomHazikaronObject from "../Api/apiYomHazikaron";
+import tefilaShalomAlIsraelObject from "../Api/apiTefilaShalomAlIsrael";
+import bodaObject from "../Api/apiBoda";
+import britMilaObject from "../Api/apiBritMila";
+import pidionHabenObject from "../Api/apiPidionHaben";
+import berajotObject from "../Api/apiBerajot";
+import abelutObject from "../Api/apiAbelut";
+import guedaliaObject from "../Api/apiGuedalia";
+import asaraBetebetObject from "../Api/apiAsaraBetebet";
+import ayunoEstherObject from "../Api/apiAyunoEsther";
+import tamuzObject from "../Api/apiTamuz";
+import minjaAyunoObject from "../Api/apiMinjaAyuno";
 const PDF = ({ navigation, route }) => {
   const { ruta } = route.params;
   console.log(ruta);
@@ -130,12 +149,52 @@ const PDF = ({ navigation, route }) => {
     dataPDF = bereshitObject;
   } else if (ruta === "shemot") {
     dataPDF = shemotObject;
-  }else if (ruta === "vaikra"){
-    dataPDF = vaikraObject
-  }else if (ruta==="bamidbar"){
-    dataPDF = bamidbarObject
-  }else if (ruta==="debarim"){
-    dataPDF=debarimObject
+  } else if (ruta === "vaikra") {
+    dataPDF = vaikraObject;
+  } else if (ruta === "bamidbar") {
+    dataPDF = bamidbarObject;
+  } else if (ruta === "debarim") {
+    dataPDF = debarimObject;
+  } else if (ruta === "birkatHalebana") {
+    dataPDF = birkatHalebanaObject;
+  } else if (ruta === "sefiratHaomer") {
+    dataPDF = sefiratHaomerObject;
+  } else if (ruta === "velas") {
+    dataPDF = velasObject;
+  } else if (ruta === "seferJanuca") {
+    dataPDF = seferJanucaObject;
+  } else if (ruta === "purim") {
+    dataPDF = purimObject;
+  } else if (ruta === "birkatHailanot") {
+    dataPDF = birkatHailanotObject;
+  } else if (ruta === "limudNisan") {
+    dataPDF = limudNisanObject;
+  } else if (ruta === "shoa") {
+    dataPDF = shoaObject;
+  } else if (ruta === "yomHazikaron") {
+    dataPDF = yomHazikaronObject;
+  } else if (ruta === "tefilaShalomAlIsrael") {
+    dataPDF = tefilaShalomAlIsraelObject;
+  } else if (ruta === "Boda") {
+    dataPDF = bodaObject;
+  } else if (ruta === "britMila") {
+    dataPDF = britMilaObject;
+  } else if (ruta === "pidionHaben") {
+    dataPDF = pidionHabenObject;
+  } else if (ruta === "berajot") {
+    dataPDF = berajotObject;
+  } else if (ruta === "abelut") {
+    dataPDF = abelutObject;
+  } else if (ruta === "guedalia") {
+    dataPDF = guedaliaObject;
+  } else if (ruta === "asaraBetebet") {
+    dataPDF = asaraBetebetObject;
+  } else if (ruta === "ayunoEsther") {
+    dataPDF = ayunoEstherObject;
+  } else if (ruta === "tamuz") {
+    dataPDF = tamuzObject;
+  } else if (ruta === "minjaAyuno") {
+    dataPDF = minjaAyunoObject;
   }
   function Slide({ data }) {
     return (
