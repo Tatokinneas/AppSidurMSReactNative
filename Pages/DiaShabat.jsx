@@ -12,10 +12,10 @@ const DiaShabat = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "shajritShabat"})}><Text style ={styles.textoDeLosBotones}>Shajrit de Shabat</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "petijatHaejal"}) }><Text style ={styles.textoDeLosBotones}>Petijat Haejal</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "musaf"})}><Text style ={styles.textoDeLosBotones}>Musaf</Text></Pressable>
-    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "kidush"})}><Text style ={styles.textoDeLosBotones}>Kidush</Text></Pressable>
+    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "kidushDia"})}><Text style ={styles.textoDeLosBotones}>Kidush</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "minjaShabat"})}><Text style ={styles.textoDeLosBotones}>Minja de Shabat</Text></Pressable>
-    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "Habdalah"})}><Text style ={styles.textoDeLosBotones}>Habdalah</Text></Pressable>
-    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("shabatonimDiferentes")}><Text style ={styles.textoDeLosBotones}>Shabatonim Diferentes</Text></Pressable>
+    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "habdalah"})}><Text style ={styles.textoDeLosBotones}>Habdalah</Text></Pressable>
+    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("shabatonim")}><Text style ={styles.textoDeLosBotones}>Shabatonim Diferentes</Text></Pressable>
     <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>

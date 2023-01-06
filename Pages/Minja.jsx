@@ -17,13 +17,13 @@ const Minja = ({ navigation }) => {
           <Text style={styles.titulo}>MINJA</Text>
           <Pressable
             style={styles.button}
-            onPress={() => navigation.navigate("PDF", { ruta: "Korbanot" })}
+            onPress={() => navigation.navigate("PDF", { ruta: "korbanot" })}
           >
             <Text style={styles.textoDeLosBotones}>Korbanot</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={() => navigation.navigate("PDF", { ruta: "AshreM" })}
+            onPress={() => navigation.navigate("PDF", { ruta: "ashreM" })}
           >
             <Text style={styles.textoDeLosBotones}>Ashre</Text>
           </Pressable>

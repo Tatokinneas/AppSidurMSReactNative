@@ -9,13 +9,14 @@ let kabalatShabat8 = require("../assets/Photos/SIDUR-240.png");
 let kabalatShabat9 = require("../assets/Photos/SIDUR-241.png");
 
 const kabalatShabatObject = [
-    { id: 1, image: kabalatShabat1 },
-    { id: 2, image: kabalatShabat2 },
-    { id: 3, image: kabalatShabat3 },
-    { id: 4, image: kabalatShabat4 },
-    { id: 5, image: kabalatShabat5 },
-    { id: 6, image: kabalatShabat6 },
-    { id: 7, image: kabalatShabat7 },
-    { id: 8, image: kabalatShabat8 },
-    { id: 9, image: kabalatShabat9 },
-]
+  { id: 1, image: kabalatShabat1 },
+  { id: 2, image: kabalatShabat2 },
+  { id: 3, image: kabalatShabat3 },
+  { id: 4, image: kabalatShabat4 },
+  { id: 5, image: kabalatShabat5 },
+  { id: 6, image: kabalatShabat6 },
+  { id: 7, image: kabalatShabat7 },
+  { id: 8, image: kabalatShabat8 },
+  { id: 9, image: kabalatShabat9 },
+];
+export default kabalatShabatObject;

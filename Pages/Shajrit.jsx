@@ -24,31 +24,31 @@ const Shajrit = ({ navigation }) => {
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={()=>navigation.navigate("PDF", { ruta: "Ashre" })}
+            onPress={()=>navigation.navigate("PDF", { ruta: "ashre" })}
           >
             <Text style={styles.textoDeLosBotones}>Ashre</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={()=>navigation.navigate("PDF", { ruta: "Ishtabaj" })}
+            onPress={()=>navigation.navigate("PDF", { ruta: "ishtabaj" })}
           >
             <Text style={styles.textoDeLosBotones}>Ishtabaj</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={() => navigation.navigate("PDF", { ruta: "Shema" })}
+            onPress={() => navigation.navigate("PDF", { ruta: "shema" })}
           >
             <Text style={styles.textoDeLosBotones}>Shema</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={() => navigation.navigate("PDF", { ruta: "Amida" })}
+            onPress={() => navigation.navigate("PDF", { ruta: "amida" })}
           >
             <Text style={styles.textoDeLosBotones}>Amida</Text>
           </Pressable>
           <Pressable
             style={styles.button}
-            onPress={() => navigation.navigate("PDF", { ruta: "Kave" })}
+            onPress={() => navigation.navigate("PDF", { ruta: "kave" })}
           >
             <Text style={styles.textoDeLosBotones}>Kave</Text>
           </Pressable>

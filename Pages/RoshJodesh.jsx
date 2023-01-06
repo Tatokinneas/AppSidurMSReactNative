@@ -9,7 +9,7 @@ const RoshJodesh = ({navigation}) => {
   
   
     <Text style ={styles.titulo}>ROSH JODESH</Text>
-    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "Halel"})}><Text style ={styles.textoDeLosBotones}>Halel</Text></Pressable>
+    <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "halel"})}><Text style ={styles.textoDeLosBotones}>Halel</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "seferRoshJodesh"}) }><Text style ={styles.textoDeLosBotones}>Lectura del Sefer</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "musafRoshJodeshJol"})}><Text style ={styles.textoDeLosBotones}>Musaf Jol</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "musafRoshJodeshShabat"})}><Text style ={styles.textoDeLosBotones}>Musaf Shabat-Rosh Jodesh</Text></Pressable>

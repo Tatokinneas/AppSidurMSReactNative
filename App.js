@@ -90,7 +90,7 @@ export default function App() {
           />
 
           <Stack.Screen
-            name="Día Shabat"
+            name="DiaShabat"
             options={{
               title: "",
               headerStyle: {
@@ -212,7 +212,7 @@ export default function App() {
           />
 
           <Stack.Screen
-            name="Shabatonim Diferentes"
+            name="shabatonim"
             options={{
               title: "",
               headerStyle: {
