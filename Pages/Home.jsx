@@ -7,6 +7,7 @@ import {
   ScrollView,
   Pressable,
 } from "react-native";
+import {useFonts} from "expo-font"
 
 import { StatusBar } from "expo-status-bar";
 import Logo from "../Components/Logo";
@@ -76,6 +77,12 @@ const Home = ({navigation}) => {
             <Text style={styles.donadores}>
               Donado Leiluy Nishmat Eliahu Ben Yemile{" "}
             </Text>
+            <View style={styles.containerAgra}>
+
+            <Pressable style={styles.buttonAgradecimientos} onPress={()=>navigation.navigate("PDF",{ ruta: "agra" })}>
+              <Text style={styles.textoDeLosBotonesAgra}>Agradecimientos</Text>
+            </Pressable>
+            </View>
           </ScrollView>
           <StatusBar style="auto" />
         </View>
@@ -97,6 +104,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
 
   },
+  containerAgra:{
+    flex:1,
+    alignItems:"center"
+    },
   title: {
     textAlign: "center",
     fontSize: 32,
@@ -113,10 +124,25 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
   },
+  buttonAgradecimientos: {
+    backgroundColor: "#860008",
+    color: "white",
+    paddingVertical: 10,
+    marginHorizontal : 5,
+    width:100,
+    marginVertical: 8,
+    alignItems: "center",
+    borderRadius: 5,
+  },
   textoDeLosBotones: {
     color: "white",
     fontFamily: "Noto",
     fontSize: 15,
+  },
+  textoDeLosBotonesAgra: {
+    color: "white",
+    fontFamily: "Noto",
+    fontSize: 10,
   },
   donadores: {
     textAlign: "center",

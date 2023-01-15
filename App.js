@@ -17,10 +17,16 @@ import BritMila from "./Pages/Brit Mila";
 import Ayunos from "./Pages/Ayunos";
 import Izkor from "./Pages/Izkor";
 import ShabatonimDiferentes from "./Pages/ShabatonimDiferentes";
+import {useFonts} from "expo-font"
+
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  let [Fonts] = useFonts({
+    'Noto': require('./assets/fonts/Noto.ttf'),
+    'Oswald': require('./assets/fonts/Oswald.ttf')
+  })
   return (
     <>
       <NavigationContainer>
@@ -223,6 +229,20 @@ export default function App() {
             }}
             component={ShabatonimDiferentes}
           />
+          <Stack.Screen
+          name="agradecimientos"
+          options={{
+            title: "",
+              headerStyle: {
+                backgroundColor: "#BB0D32",
+              },
+              headerShadowVisible: false,
+              headerBackTitleVisible: false,
+          }}
+          component={PDF}
+          >
+
+          </Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     </>

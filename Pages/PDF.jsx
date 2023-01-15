@@ -75,9 +75,10 @@ import asaraBetebetObject from "../Api/apiAsaraBetebet";
 import ayunoEstherObject from "../Api/apiAyunoEsther";
 import tamuzObject from "../Api/apiTamuz";
 import minjaAyunoObject from "../Api/apiMinjaAyuno";
+import agraObject from "../Api/apiAgra.js"
 const PDF = ({ navigation, route }) => {
   const { ruta } = route.params;
-  console.log(ruta);
+ 
   let dataPDF = null;
   if (ruta === "birkatHashajar") {
     dataPDF = birkatHashajarObject;
@@ -195,7 +196,10 @@ const PDF = ({ navigation, route }) => {
     dataPDF = tamuzObject;
   } else if (ruta === "minjaAyuno") {
     dataPDF = minjaAyunoObject;
+  }else if (ruta=="agra"){
+    dataPDF=agraObject;
   }
+
   function Slide({ data }) {
     return (
       <View style={styles.sliderinnerconainter}>
@@ -224,11 +228,11 @@ const PDF = ({ navigation, route }) => {
     <>
       <View style={styles.maincontain}>
         <View style={styles.buttoncontain}>
-          <Pressable>
-            <Text>{"<-"}</Text>
+          <Pressable style={styles.flechaAnterior}>
+            <Text>{"<-" }Anterior</Text>
           </Pressable>
-          <Pressable>
-            <Text>{"->"}</Text>
+          <Pressable style={styles.flechaSiguiente}>
+            <Text>{"->"} Siguiente</Text>
           </Pressable>
         </View>
       </View>
@@ -247,8 +251,6 @@ const styles = StyleSheet.create({
   slidercontain: {
     flex: 20,
     marginTop: -75,
-    // marginStart: 30,
-    // marginEnd: 30,
   },
   buttoncontain: {
     flex: 2,
