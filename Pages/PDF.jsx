@@ -228,11 +228,12 @@ const PDF = ({ navigation, route }) => {
     <>
       <View style={styles.maincontain}>
         <View style={styles.buttoncontain}>
-          <Pressable style={styles.flechaAnterior}>
-            <Text>{"<-" }Anterior</Text>
+          <Pressable style={styles.circle}>
+
+            <Text style={styles.flechaSiguiente}>{"<-"} </Text>
           </Pressable>
-          <Pressable style={styles.flechaSiguiente}>
-            <Text>{"->"} Siguiente</Text>
+          <Pressable style={styles.textFlechaSiguiente}>
+            <Text> SIGUIENTE REZO </Text>
           </Pressable>
         </View>
       </View>
@@ -265,6 +266,40 @@ const styles = StyleSheet.create({
   imagecarousel: {
     width: windowWidth * 0.9,
     height: windowHeight * 0.9,
+  },
+
+  circle: {
+   
+  
+borderRadius: 8,
+backgroundColor: "#860008",
+margin: 5,
+alignItems: "center",
+
+
+
+   
+  },
+  textFlechaSiguiente: {
+    width: 170,
+    height: 90,
+    margin: 5,
+    position: "relative",
+    fontSize: 20,
+    color: "white",
+    
+   
+  },
+  flechaSiguiente: {
+    width: 30,
+    height: 30,
+
+    marginLeft: 2,
+    fontSize: 25,
+    color: "white",
+    alignItems: "center",
+    
+   
   },
 });
 
