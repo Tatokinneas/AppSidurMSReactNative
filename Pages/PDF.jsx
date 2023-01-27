@@ -3,6 +3,7 @@ import {
   Dimensions,
   FlatList,
   Image,
+  ImageBackground,
   Pressable,
   StyleSheet,
   Text,
@@ -75,10 +76,132 @@ import asaraBetebetObject from "../Api/apiAsaraBetebet";
 import ayunoEstherObject from "../Api/apiAyunoEsther";
 import tamuzObject from "../Api/apiTamuz";
 import minjaAyunoObject from "../Api/apiMinjaAyuno";
-import agraObject from "../Api/apiAgra.js"
+import agraObject from "../Api/apiAgra.js";
+import LeftArrow from "../assets/leftArrow.png";
 const PDF = ({ navigation, route }) => {
   const { ruta } = route.params;
+  const [showNext, setShowNext] = useState(true);
  
+  const handlePrevious = () => {
+    if (ruta === "birkatHashajar") {
+      navigation.navigate("PDF", { ruta: "kadeshLi" });
+    } else if (ruta === "kadeshLi") {
+      navigation.navigate("PDF", { ruta: "ashre" });
+    } else if (ruta == "ashre") {
+      navigation.navigate("PDF", { ruta: "ishtabaj" });
+    } else if (ruta == "ishtabaj") {
+      navigation.navigate("PDF", { ruta: "shema" });
+    } else if (ruta == "shema") {
+      navigation.navigate("PDF", { ruta: "amida" });
+    } else if (ruta == "amida") {
+      navigation.navigate("PDF", { ruta: "kave" });
+    } else if (ruta === "kave") {
+      navigation.navigate("PDF", { ruta: "korbanot" });
+    } else if (ruta === "korbanot") {
+      navigation.navigate("PDF", { ruta: "ashreM" });
+    } else if (ruta === "ashreM") {
+      navigation.navigate("PDF", { ruta: "yehiShem" });
+    } else if (ruta === "yehiShem") {
+      navigation.navigate("PDF", { ruta: "arbit" });
+    } else if (ruta === "arbit") {
+      navigation.navigate("PDF", { ruta: "keriatShema" });
+    } else if (ruta === "keriatShema") {
+      navigation.navigate("PDF", { ruta: "shirHashirim" });
+    } else if (ruta === "shirHashirim") {
+      navigation.navigate("PDF", { ruta: "kabalatShabat" });
+    } else if (ruta === "kabalatShabat") {
+      navigation.navigate("PDF", { ruta: "arbitShabat" });
+    } else if (ruta === "arbitShabat") {
+      navigation.navigate("PDF", { ruta: "kidush" });
+    } else if (ruta === "kidush") {
+      navigation.navigate("PDF", { ruta: "birkatHamazon" });
+    } else if (ruta === "birkatHamazon") {
+      navigation.navigate("PDF", { ruta: "shajritShabat" });
+    } else if (ruta === "shajritShabat") {
+      navigation.navigate("PDF", { ruta: "petijatHaejal" });
+    } else if (ruta === "petijatHaejal") {
+      navigation.navigate("PDF", { ruta: "musaf" });
+    } else if (ruta === "musaf") {
+      navigation.navigate("PDF", { ruta: "kidushDia" });
+    } else if (ruta === "kidushDia") {
+      navigation.navigate("PDF", { ruta: "minjaShabat" });
+    } else if (ruta === "minjaShabat") {
+      navigation.navigate("PDF", { ruta: "habdalah" });
+    } else if (ruta === "habdalah") {
+      navigation.navigate("PDF", { ruta: "shabatShekalim" });
+    } else if (ruta === "shabatShekalim") {
+      navigation.navigate("PDF", { ruta: "shabatZajor" });
+    } else if (ruta === "shabatZajor") {
+      navigation.navigate("PDF", { ruta: "shabatonimDiferentes" });
+    } else if (ruta === "shabatonimDiferentes") {
+      navigation.navigate("PDF", { ruta: "halel" });
+    } else if (ruta === "halel") {
+      navigation.navigate("PDF", { ruta: "seferRoshJodesh" });
+    } else if (ruta === "seferRoshJodesh") {
+      navigation.navigate("PDF", { ruta: "musafRoshJodeshJol" });
+    } else if (ruta === "musafRoshJodeshJol") {
+      navigation.navigate("PDF", { ruta: "musafRoshJodeshShabat" });
+    } else if (ruta === "musafRoshJodeshShabat") {
+      navigation.navigate("PDF", { ruta: "mizmorim" });
+    } else if (ruta === "mizmorim") {
+      navigation.navigate("PDF", { ruta: "amidaYomtob" });
+    } else if (ruta === "amidaYomtob") {
+      navigation.navigate("PDF", { ruta: "amidaMusaf" });
+    } else if (ruta === "amidaMusaf") {
+      navigation.navigate("PDF", { ruta: "bereshit" });
+    } else if (ruta === "bereshit") {
+      navigation.navigate("PDF", { ruta: "shemot" });
+    } else if (ruta === "shemot") {
+      navigation.navigate("PDF", { ruta: "vaikra" });
+    } else if (ruta === "vaikra") {
+      navigation.navigate("PDF", { ruta: "bamidbar" });
+    } else if (ruta === "bamidbar") {
+      navigation.navigate("PDF", { ruta: "debarim" });
+    } else if (ruta === "debarim") {
+      navigation.navigate("PDF", { ruta: "birkatHalebana" });
+    } else if (ruta === "birkatHalebana") {
+      navigation.navigate("PDF", { ruta: "sefiratHaomer" });
+    } else if (ruta === "sefiratHaomer") {
+      navigation.navigate("PDF", { ruta: "velas" });
+    } else if (ruta === "velas") {
+      navigation.navigate("PDF", { ruta: "seferJanuca" });
+    } else if (ruta === "seferJanuca") {
+      navigation.navigate("PDF", { ruta: "purim" });
+    } else if (ruta === "purim") {
+      navigation.navigate("PDF", { ruta: "birkatHailanot" });
+    } else if (ruta === "birkatHailanot") {
+      navigation.navigate("PDF", { ruta: "limudNisan" });
+    } else if (ruta === "limudNisan") {
+      navigation.navigate("PDF", { ruta: "shoa" });
+    } else if (ruta === "shoa") {
+      navigation.navigate("PDF", { ruta: "yomHazikaron" });
+    } else if (ruta === "yomHazikaron") {
+      navigation.navigate("PDF", { ruta: "tefilaShalomAlIsrael" });
+    } else if (ruta === "tefilaShalomAlIsrael") {
+      navigation.navigate("PDF", { ruta: "Boda" });
+    } else if (ruta === "Boda") {
+      navigation.navigate("PDF", { ruta: "britMila" });
+    } else if (ruta === "britMila") {
+      navigation.navigate("PDF", { ruta: "pidionHaben" });
+    } else if (ruta === "pidionHaben") {
+      navigation.navigate("PDF", { ruta: "berajot" });
+    } else if (ruta === "berajot") {
+      navigation.navigate("PDF", { ruta: "abelut" });
+    } else if (ruta === "abelut") {
+      navigation.navigate("PDF", { ruta: "guedalia" });
+    } else if (ruta === "guedalia") {
+      navigation.navigate("PDF", { ruta: "asaraBetebet" });
+    } else if (ruta === "asaraBetebet") {
+      navigation.navigate("PDF", { ruta: "ayunoEsther" });
+    } else if (ruta === "ayunoEsther") {
+      navigation.navigate("PDF", { ruta: "tamuz" });
+    } else if (ruta === "tamuz") {
+      navigation.navigate("PDF", { ruta: "minjaAyuno" });
+    } else if (ruta === "minjaAyuno") {
+      // navigation.navigate("PDF", { ruta: "kadeshLi" });
+    }
+  };
+
   let dataPDF = null;
   if (ruta === "birkatHashajar") {
     dataPDF = birkatHashajarObject;
@@ -196,8 +319,8 @@ const PDF = ({ navigation, route }) => {
     dataPDF = tamuzObject;
   } else if (ruta === "minjaAyuno") {
     dataPDF = minjaAyunoObject;
-  }else if (ruta=="agra"){
-    dataPDF=agraObject;
+  } else if (ruta == "agra") {
+    dataPDF = agraObject;
   }
 
   function Slide({ data }) {
@@ -228,12 +351,23 @@ const PDF = ({ navigation, route }) => {
     <>
       <View style={styles.maincontain}>
         <View style={styles.buttoncontain}>
-          <Pressable style={styles.flechaAnterior}>
-            <Text>{"<-" }Anterior</Text>
-          </Pressable>
-          <Pressable style={styles.flechaSiguiente}>
-            <Text>{"->"} Siguiente</Text>
-          </Pressable>
+          {showNext ? (
+            <>
+              <Pressable onPress={() => handlePrevious()} style={styles.circle}>
+                <ImageBackground
+                  source={LeftArrow}
+                  style={styles.flechaAnterior}
+                ></ImageBackground>
+              </Pressable>
+              <Pressable
+                onPress={() => handlePrevious()}
+              >
+                <Text>Siguiente rezo</Text>
+              </Pressable>
+            </>
+          ) : (
+            <View></View>
+          )}
         </View>
       </View>
       <View style={styles.slidercontain}>
@@ -249,6 +383,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   slidercontain: {
+    zIndex: -2,
     flex: 20,
     marginTop: -75,
   },
@@ -256,6 +391,9 @@ const styles = StyleSheet.create({
     flex: 2,
     flexDirection: "row",
     height: 1,
+    marginTop: 20,
+    marginLeft: 20,
+    alignItems: "center",
   },
   slide: { flex: 1 },
   carousel: {
@@ -265,6 +403,23 @@ const styles = StyleSheet.create({
   imagecarousel: {
     width: windowWidth * 0.9,
     height: windowHeight * 0.9,
+  },
+  circle: {
+    borderRadius: 200,
+    marginRight: 10,
+    justifyContent: "center",
+    alignContent: "center",
+    alignItems: "center",
+    width: 30,
+    height: 30,
+  },
+  flechaAnterior: {
+    width: 30,
+    height: 30,
+    fontStyle: "blue",
+    color: "white",
+    alignContent: "center",
+    alignItems: "center",
   },
 });
 
