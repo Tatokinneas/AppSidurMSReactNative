@@ -1,7 +1,7 @@
-let agra1 = require("../assets/Photos/DERECHOS RESERVADOS/agra1.png");
-let agra2 = require("../assets/Photos/DERECHOS RESERVADOS/agra2.png");
-let agra3 = require("../assets/Photos/DERECHOS RESERVADOS/agra3.png");
-let agra4 = require("../assets/Photos/DERECHOS RESERVADOS/agra4.png");
+let agra1 = require("../assets/Photos/DERECHOSRESERVADOS/agra1.png");
+let agra2 = require("../assets/Photos/DERECHOSRESERVADOS/agra2.png");
+let agra3 = require("../assets/Photos/DERECHOSRESERVADOS/agra3.png");
+let agra4 = require("../assets/Photos/DERECHOSRESERVADOS/agra4.png");
 
 
 const agraObject = [
