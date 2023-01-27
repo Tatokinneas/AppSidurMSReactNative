@@ -351,13 +351,23 @@ const PDF = ({ navigation, route }) => {
     <>
       <View style={styles.maincontain}>
         <View style={styles.buttoncontain}>
-          <Pressable style={styles.circle}>
-
-            <Text style={styles.flechaSiguiente}>{"<-"} </Text>
-          </Pressable>
-          <Pressable style={styles.textFlechaSiguiente}>
-            <Text> SIGUIENTE REZO </Text>
-          </Pressable>
+          {showNext ? (
+            <>
+              <Pressable onPress={() => handlePrevious()} style={styles.circle}>
+                <ImageBackground
+                  source={LeftArrow}
+                  style={styles.flechaAnterior}
+                ></ImageBackground>
+              </Pressable>
+              <Pressable
+                onPress={() => handlePrevious()}
+              >
+                <Text>Siguiente rezo</Text>
+              </Pressable>
+            </>
+          ) : (
+            <View></View>
+          )}
         </View>
       </View>
       <View style={styles.slidercontain}>
@@ -393,6 +403,59 @@ const styles = StyleSheet.create({
   imagecarousel: {
     width: windowWidth * 0.9,
     height: windowHeight * 0.9,
+  },
+<<<<<<< HEAD
+  circle: {
+    borderRadius: 200,
+    marginRight: 10,
+    justifyContent: "center",
+    alignContent: "center",
+    alignItems: "center",
+    width: 30,
+    height: 30,
+  },
+  flechaAnterior: {
+    width: 30,
+    height: 30,
+    fontStyle: "blue",
+    color: "white",
+    alignContent: "center",
+    alignItems: "center",
+=======
+
+  circle: {
+   
+  
+borderRadius: 8,
+backgroundColor: "#860008",
+margin: 5,
+alignItems: "center",
+
+
+
+   
+  },
+  textFlechaSiguiente: {
+    width: 170,
+    height: 90,
+    margin: 5,
+    position: "relative",
+    fontSize: 20,
+    color: "white",
+    
+   
+  },
+  flechaSiguiente: {
+    width: 30,
+    height: 30,
+
+    marginLeft: 2,
+    fontSize: 25,
+    color: "white",
+    alignItems: "center",
+    
+   
+>>>>>>> 24ca70cc9875a45ede9f6859ced65d8741b7e7eb
   },
 });
 
