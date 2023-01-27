@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   textoDeLosBotones: {
 
     color: 'white',
-    fontFamily: "Noto",
+    // fontFamily: "Noto",
     fontSize: 15,
     
   },
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 30,
     color: "#1A0D6B",
-    fontFamily: 'Noto',
+    // fontFamily: 'Noto',
     
 
   },

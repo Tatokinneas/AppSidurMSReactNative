@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
   },
   textoDeLosBotones:{
     color: "white",
-    fontFamily: "Noto",
+    // fontFamily: "Noto",
     fontSize: 15,
   }
 });

@@ -17,16 +17,26 @@ import BritMila from "./Pages/Brit Mila";
 import Ayunos from "./Pages/Ayunos";
 import Izkor from "./Pages/Izkor";
 import ShabatonimDiferentes from "./Pages/ShabatonimDiferentes";
-import {useFonts} from "expo-font"
-
+import { useFonts } from "expo-font";
+// import * as SplashScreen from "expo-splash-screen";
 
 const Stack = createNativeStackNavigator();
+// SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  let [Fonts] = useFonts({
-    'Noto': require('./assets/fonts/Noto.ttf'),
-    'Oswald': require('./assets/fonts/Oswald.ttf')
-  })
+  // let [Fonts] = useFonts({
+  //   Noto: require("./assets/fonts/Noto.ttf"),
+  //   Oswald: require("./assets/fonts/Oswald.ttf"),
+  // });
+  // const onLayoutRootView = useCallback(async () => {
+  //   if (fontsLoaded) {
+  //     await SplashScreen.hideAsync();
+  //   }
+  // }, [fontsLoaded]);
+
+  // if (!fontsLoaded) {
+  //   return null;
+  // }
   return (
     <>
       <NavigationContainer>
@@ -55,7 +65,18 @@ export default function App() {
               headerBackTitleVisible: false,
             }}
           />
-          <Stack.Screen name="PDF" component={PDF}></Stack.Screen>
+          <Stack.Screen
+            name="PDF"
+            component={PDF}
+            options={{
+              title: "",
+              headerStyle: {
+                backgroundColor: "#BB0D32",
+              },
+              headerShadowVisible: false,
+              headerBackTitleVisible: false,
+            }}
+          ></Stack.Screen>
 
           <Stack.Screen
             name="Minja"
@@ -230,19 +251,17 @@ export default function App() {
             component={ShabatonimDiferentes}
           />
           <Stack.Screen
-          name="agradecimientos"
-          options={{
-            title: "",
+            name="agradecimientos"
+            options={{
+              title: "",
               headerStyle: {
                 backgroundColor: "#BB0D32",
               },
               headerShadowVisible: false,
               headerBackTitleVisible: false,
-          }}
-          component={PDF}
-          >
-
-          </Stack.Screen>
+            }}
+            component={PDF}
+          ></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     </>
