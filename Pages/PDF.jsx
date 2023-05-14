@@ -390,7 +390,7 @@ const PDF = ({ navigation, route }) => {
           ) : (
             <View></View>
           )}
-          <View> 
+          {/* <View> 
  <Pressable style={styles.circle}>
                 <ImageBackground
                   source={RightArrow}
@@ -413,7 +413,7 @@ const PDF = ({ navigation, route }) => {
               >
                 <Text>Página Anterior</Text>
               </Pressable>
-              </View>
+              </View> */}
         </View>
       </View>
       <View style={styles.slidercontain}>
