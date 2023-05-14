@@ -5,6 +5,7 @@ import {
   Image,
   ImageBackground,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -78,6 +79,7 @@ import tamuzObject from "../Api/apiTamuz";
 import minjaAyunoObject from "../Api/apiMinjaAyuno";
 import agraObject from "../Api/apiAgra.js";
 import LeftArrow from "../assets/leftArrow.png";
+import RightArrow from "../assets/rightArrow.png";
 const PDF = ({ navigation, route }) => {
   const { ruta } = route.params;
   const [showNext, setShowNext] = useState(true);
@@ -323,14 +325,32 @@ const PDF = ({ navigation, route }) => {
     dataPDF = agraObject;
   }
 
+  //function NextImage ({ }){
+
+
+
+
+
+ // }
+
+
   function Slide({ data }) {
     return (
       <View style={styles.sliderinnerconainter}>
+        <ScrollView 
+        maximumZoomScale= {5}
+        scrollEnabled = {true}
+        minimumZoomScale = {1}
+        showsHorizontalScrollIndicator = {false}
+        showsVerticalScrollIndicator = {false}
+        >
         <Image
           source={data.image}
           style={styles.imagecarousel}
           resizeMode="center"
+      
         ></Image>
+      </ScrollView>
       </View>
     );
   }
@@ -344,6 +364,8 @@ const PDF = ({ navigation, route }) => {
         }}
         horizontal={true}
         inverted={true}
+        pagingEnabled = {true}
+
       />
     );
   }
@@ -368,6 +390,30 @@ const PDF = ({ navigation, route }) => {
           ) : (
             <View></View>
           )}
+          <View> 
+ <Pressable style={styles.circle}>
+                <ImageBackground
+                  source={RightArrow}
+                  style={styles.flechaAnterior}
+                ></ImageBackground>
+              </Pressable>
+              <Pressable
+                
+              >
+                <Text>Siguiente página</Text>
+              </Pressable>
+              <Pressable  style={styles.circle}>
+                <ImageBackground
+                  source={LeftArrow}
+                  style={styles.flechaAnterior}
+                ></ImageBackground>
+              </Pressable>
+              <Pressable
+               
+              >
+                <Text>Página Anterior</Text>
+              </Pressable>
+              </View>
         </View>
       </View>
       <View style={styles.slidercontain}>
@@ -386,6 +432,9 @@ const styles = StyleSheet.create({
     zIndex: -2,
     flex: 20,
     marginTop: -75,
+    marginBottom: 50,
+    
+
   },
   buttoncontain: {
     flex: 2,
@@ -401,8 +450,9 @@ const styles = StyleSheet.create({
   },
   sliderinnerconainter: {},
   imagecarousel: {
-    width: windowWidth * 0.9,
-    height: windowHeight * 0.9,
+    width: windowWidth,
+    height: windowHeight,
+   
   },
   circle: {
     borderRadius: 200,

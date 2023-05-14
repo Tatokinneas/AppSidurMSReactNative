@@ -32,7 +32,7 @@ const Arbit = ({ navigation }) => {
             </Text>
           </Pressable>
           <Text style={styles.donadores}>
-            Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie
+            Leiluy Nishmat Daniela Sarah Bat Sophie
           </Text>
           <StatusBar style="auto" />
         </ScrollView>

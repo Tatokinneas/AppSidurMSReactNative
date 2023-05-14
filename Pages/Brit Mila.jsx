@@ -11,7 +11,7 @@ const BritMila = ({navigation}) => {
     <Text style ={styles.titulo}>NACIMIENTO DE VARÓN</Text>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "britMila"})}><Text style ={styles.textoDeLosBotones}>Brit Mila</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "pidionHaben"}) }><Text style ={styles.textoDeLosBotones}>Pidion Haben</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

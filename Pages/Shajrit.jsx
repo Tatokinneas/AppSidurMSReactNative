@@ -51,7 +51,12 @@ const Shajrit = ({ navigation }) => {
             onPress={() => navigation.navigate("PDF", { ruta: "kave" })}
           >
             <Text style={styles.textoDeLosBotones}>Kave</Text>
+          
           </Pressable>
+
+          <Text style={styles.donadores}>
+           Leiluy Nishmat Daniela Sarah Bat Sophie
+          </Text>
         </ScrollView>
       </View>
     </>
@@ -78,6 +83,14 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     alignItems: "center",
     borderRadius: 5,
+  },
+
+  donadores: {
+      textAlign: "center",
+      fontSize: 30,
+      color: "#1A0D6B",
+      //fontFamily: "Noto",
+
   },
   textoDeLosBotones:{
     color: "white",

@@ -50,7 +50,7 @@ const NocheShabat = ({ navigation }) => {
             <Text style={styles.textoDeLosBotones}>Birkat Hamazon</Text>
           </Pressable>
           <Text style={styles.donadores}>
-            Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie
+            Leiluy Nishmat Eliahu Ben Yemile
           </Text>
           <StatusBar style="auto" />
         </ScrollView>

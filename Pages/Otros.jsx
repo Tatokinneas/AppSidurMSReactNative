@@ -22,6 +22,9 @@ const Otros = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "berajot"})}><Text style ={styles.textoDeLosBotones}>Berajot</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "abelut"})}><Text style ={styles.textoDeLosBotones}>Abelut</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("Ayunos")}><Text style ={styles.textoDeLosBotones}>Ayunos</Text></Pressable>
+    <Text style={styles.donadores}>
+            Leiluy Nishmat Daniela Sarah Bat Sophie
+          </Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

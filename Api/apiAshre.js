@@ -1,3 +1,4 @@
+let Ashre0 = require("../assets/Photos/SIDUR-053.png");
 let Ashre1 = require("../assets/Photos/SIDUR-054.png");
 let Ashre2 = require("../assets/Photos/SIDUR-055.png");
 let Ashre3 = require("../assets/Photos/SIDUR-056.png");
@@ -9,6 +10,7 @@ let Ashre8 = require("../assets/Photos/SIDUR-061.png");
 let Ashre9 = require("../assets/Photos/SIDUR-062.png");
 
 const ashreObject = [
+  { id: 0, image: Ashre0 },
   { id: 1, image: Ashre1 },
   { id: 2, image: Ashre2 },
   { id: 3, image: Ashre3 },

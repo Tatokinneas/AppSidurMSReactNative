@@ -13,7 +13,7 @@ const RoshJodesh = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "seferRoshJodesh"}) }><Text style ={styles.textoDeLosBotones}>Lectura del Sefer</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "musafRoshJodeshJol"})}><Text style ={styles.textoDeLosBotones}>Musaf Jol</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "musafRoshJodeshShabat"})}><Text style ={styles.textoDeLosBotones}>Musaf Shabat-Rosh Jodesh</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Eliahu Ben Yemile</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

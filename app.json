@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Galeria",
-    "slug": "Galeria",
+    "name": "Sidur Monte Sinai",
+    "slug": "sidur-monte-sinai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,15 +26,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.tatokinneas.Galeria"
+      "package": "com.eliaspenhosabadi.SidurMonteSinai"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "2f50b5fa-ba08-48ed-b5fd-2dffc420226f"
+        "projectId": "b3e121d5-6a0e-467f-90bb-201372f6237a"
       }
-    }
+    },
+    "owner": "eliaspenhos"
   }
 }

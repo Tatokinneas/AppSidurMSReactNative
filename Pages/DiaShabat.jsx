@@ -16,7 +16,7 @@ const DiaShabat = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "minjaShabat"})}><Text style ={styles.textoDeLosBotones}>Minja de Shabat</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "habdalah"})}><Text style ={styles.textoDeLosBotones}>Habdalah</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("shabatonim")}><Text style ={styles.textoDeLosBotones}>Shabatonim Diferentes</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

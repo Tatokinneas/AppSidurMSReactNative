@@ -35,7 +35,7 @@ const Minja = ({ navigation }) => {
           </Pressable>
           <Text style={styles.donadores}>
             {" "}
-            Donado Leiluy Nishmat Eliahu Ben Yemile{" "}
+            Leiluy Nishmat Eliahu Ben Yemile{" "}
           </Text>
           <StatusBar style="auto" />
         </ScrollView>

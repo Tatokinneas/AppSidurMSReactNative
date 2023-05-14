@@ -8,4 +8,4 @@ const Agradecimientos = () => {
   )
 }
 
-export default Agradecimientos
+export default Agradecimientos;

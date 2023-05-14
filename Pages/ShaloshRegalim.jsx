@@ -12,7 +12,7 @@ const ShaloshRegalim = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "mizmorim"})}><Text style ={styles.textoDeLosBotones}>Mizmorim</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "amidaYomtob"}) }><Text style ={styles.textoDeLosBotones}>Amida Yom Tob</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "amidaMusaf"})}><Text style ={styles.textoDeLosBotones}>Amida de Musaf</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

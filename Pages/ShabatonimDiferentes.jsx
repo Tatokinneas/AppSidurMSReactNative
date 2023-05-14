@@ -13,7 +13,7 @@ const ShabatonimDiferentes = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "shabatZajor"}) }><Text style ={styles.textoDeLosBotones}>Shabat Zajor</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "shabatonimDiferentes"})}><Text style ={styles.textoDeLosBotones}>Shabat Pará</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "shabatonimDiferentes"}) }><Text style ={styles.textoDeLosBotones}>Shabat Hajodesh</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Eliahu Ben Yemile</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

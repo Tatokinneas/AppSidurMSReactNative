@@ -14,7 +14,7 @@ const Perashot = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "vaikra"})}><Text style ={styles.textoDeLosBotones}>Vaikra</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "bamidbar"})}><Text style ={styles.textoDeLosBotones}>Bamidbar</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "debarim"})}><Text style ={styles.textoDeLosBotones}>Debarim</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Eliahu Ben Yemile</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

@@ -11,7 +11,7 @@ const Januca = ({navigation}) => {
     <Text style ={styles.titulo}>JANUCA</Text>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "velas"})}><Text style ={styles.textoDeLosBotones}>Encendido de velas</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "seferJanuca"}) }><Text style ={styles.textoDeLosBotones}>Lectura del sefer</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

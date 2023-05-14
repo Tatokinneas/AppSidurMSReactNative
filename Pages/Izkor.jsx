@@ -11,7 +11,7 @@ const Izkor = ({navigation}) => {
     <Text style ={styles.titulo}>IZKOR</Text>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "shoa"})}><Text style ={styles.textoDeLosBotones}>Holocausto</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "yomHazikaron"}) }><Text style ={styles.textoDeLosBotones}>Yom Hazikaron</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Donado Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

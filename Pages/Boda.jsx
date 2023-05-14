@@ -11,7 +11,7 @@ const Boda = ({navigation}) => {
     <Text style ={styles.titulo}>BODA</Text>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "Boda"})}><Text style ={styles.textoDeLosBotones}>Irusin</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "Boda"}) }><Text style ={styles.textoDeLosBotones}>Ashiba Berajot</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>

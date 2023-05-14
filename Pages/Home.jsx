@@ -73,9 +73,9 @@ const Home = ({navigation}) => {
             >
               <Text style={styles.textoDeLosBotones}>Otros...</Text>
             </Pressable>
-            <Text style={styles.nota}> *Solo Cohen, Levy e Israel </Text>
+      
             <Text style={styles.donadores}>
-              Donado Leiluy Nishmat Eliahu Ben Yemile{" "}
+              Leiluy Nishmat Eliahu Ben Yemile y Daniela Sara Bat Sophie{" "}
             </Text>
             <View style={styles.containerAgra}>
 

@@ -14,7 +14,7 @@ const Ayunos = ({navigation}) => {
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "ayunoEsther"})}><Text style ={styles.textoDeLosBotones}> Ayuno de Esther </Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "tamuz"}) }><Text style ={styles.textoDeLosBotones}> Ayuno 17 Tamuz </Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF",{ruta: "minjaAyuno"}) }><Text style ={styles.textoDeLosBotones}> Minja de Ayunos</Text></Pressable>
-    <Text style={styles.donadores}>Donado Beraja y Hatzlaja Daniela Sarah Bat Sophie</Text>
+    <Text style={styles.donadores}>Leiluy Nishmat Daniela Sarah Bat Sophie</Text>
     <StatusBar style="auto" />
       </ScrollView>
     </SafeAreaView>
